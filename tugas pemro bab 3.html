@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #ff4081;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff80ab;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+
+        .hero {
+            background-color: #ffe0e6;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        .product p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .product .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff4081;
+        }
+
+        .product button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .product button:hover {
+            background-color: #e91e63;
+        }
+
+        footer {
+            background-color: #ff80ab;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Makeup Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <img src="bg.jpg" alt="Foundation" width="1200x400">
+        <h1>Discover Your Beauty</h1>
+        <p>Shop the latest and greatest in makeup products!</p>
+    </section>
+
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="liquid.jpg" alt="Foundation">
+                <h2>Liquid Foundation</h2>
+                <p>Perfect coverage foundation for all skin types.</p>
+                <p class="price">$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="lipstick.jpg" alt="Lipstick">
+                <h2>Matte Lipstick</h2>
+                <p>Long-lasting and vibrant matte lipstick.</p>
+                <p class="price">$15.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="eyeshadow.jpg" alt="Eyeshadow Palette">
+                <h2>Eyeshadow Palette</h2>
+                <p>Palette with a variety of stunning colors.</p>
+                <p class="price">$30.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Makeup Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
